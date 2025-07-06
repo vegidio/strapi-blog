@@ -1,5 +1,5 @@
 {
-  "name": "my-app-name",
+  "name": "strapi-blog",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.15.0",
+    "@strapi/plugin-documentation": "^5.17.0",
+    "@strapi/plugin-graphql": "^5.17.0",
     "@strapi/plugin-users-permissions": "5.15.0",
     "@strapi/strapi": "5.15.0",
     "better-sqlite3": "11.3.0",
@@ -23,7 +25,6 @@
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"

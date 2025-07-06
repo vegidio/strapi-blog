@@ -27,12 +27,16 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
-    "author": {
+    "user": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::author.author",
+      "target": "plugin::users-permissions.user",
       "inversedBy": "articles"
     },
     "category": {
@@ -43,7 +47,12 @@
     },
     "blocks": {
       "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+      "components": [
+        "shared.media",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.slider"
+      ]
     }
   }
 }
