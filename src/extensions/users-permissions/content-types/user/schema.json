@@ -66,14 +66,14 @@
       "inversedBy": "users",
       "configurable": false
     },
+    "name": {
+      "type": "string"
+    },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "user"
-    },
-    "name": {
-      "type": "string"
     }
   }
 }
